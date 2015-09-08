@@ -71,3 +71,15 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 * <a href="http://nicoledominguez.com/portfolio/">http://nicoledominguez.com/portfolio/</a>
 * <a href="http://www.roxannecook.com/">http://www.roxannecook.com/</a>
 * <a href="http://www.84colors.com/portfolio.html">http://www.84colors.com/portfolio.html</a>
+
+Optimzations Steps taken in Index.html
+- Resized pizzaria.jpg (reduced >90%)
+- Optimized pizzaria.jpg
+- Added media type to print.css to remove it from critical path while displaying the page in abrowser
+- Optimized the remaining images on the page
+- Wed Front Loader to load Google Fonts instead of a link to CSS.
+- Remove the server call for style.css by defining the style in the <head>
+- Ending Page Test results for Mobile and Desktop were 95 and 97 respectively.
+
+Optimization for Pizza.html page
+
