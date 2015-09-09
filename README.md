@@ -72,14 +72,26 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 * <a href="http://www.roxannecook.com/">http://www.roxannecook.com/</a>
 * <a href="http://www.84colors.com/portfolio.html">http://www.84colors.com/portfolio.html</a>
 
-Optimzations Steps taken in Index.html
-- Resized pizzaria.jpg (reduced >90%)
-- Optimized pizzaria.jpg
-- Added media type to print.css to remove it from critical path while displaying the page in abrowser
-- Optimized the remaining images on the page
-- Wed Front Loader to load Google Fonts instead of a link to CSS.
-- Remove the server call for style.css by defining the style in the <head>
-- Ending Page Test results for Mobile and Desktop were 95 and 97 respectively.
+Optimzations Steps in Pizza.html task
+	Too many pizzas (200) were being created for the screen size
+		- Decreased to 32 pizzas
 
-Optimization for Pizza.html page
+With 32 configured...
+		0     		256     		512     		768    		1024    	1280    	1536    	1792
+		0px			0px			0px			0px			0px			0px			0px			0px
+		256px		256px		256px		256px		256px		256px		256px		256px
+		512px		512px		512px		512px		512px		512px		512px		512px
+		768px		768px		768px		768px		768px		768px		768px		768px
+With 40 configured... above + next 2
+		1024px		1024px		1024px		1024px		1024px		1024px		1024px		1024px
+		1280px		1280px		1280px		1280px		1280px		1280px		1280px		1280px		
+With 200 configured... above + below
+		1536px		1536px		1536px		1536px		1536px		1536px		1536px		1536px	
+		1792px		1792px		1792px		1792px		1792px		1792px		1792px		...	
+		2048px		2048px		2048px		2048px		2048px		2048px		...			...	
+		2304px		2304px		2304px		2304px		2304px		...			...			...	
+		2304px		2304px		2304px		2304px		...			...			...			...	
+	all the way up to 
+		6144px		6144px		6144px		6144px		6144px		6144px		6144px		6144px
+
 
