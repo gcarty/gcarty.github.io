@@ -72,9 +72,12 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 * <a href="http://www.roxannecook.com/">http://www.roxannecook.com/</a>
 * <a href="http://www.84colors.com/portfolio.html">http://www.84colors.com/portfolio.html</a>
 
-Optimzations Steps in Pizza.html task
+
+============== OPTIMIZATION STEPS
+
+1. Optimzations Steps in Pizza.html task
 	Too many pizzas (200) were being created for the screen size
-		- Decreased to 32 pizzas
+		- Decreased to 32 pizzas in the main.js
 
 With 32 configured...
 		0     		256     		512     		768    		1024    	1280    	1536    	1792
@@ -93,5 +96,12 @@ With 200 configured... above + below
 		2304px		2304px		2304px		2304px		...			...			...			...	
 	all the way up to 
 		6144px		6144px		6144px		6144px		6144px		6144px		6144px		6144px
+
+
+2. There was an iterative DOM query in a for loop which was inefficient
+	- moved the dom query outside the loop and assigned its value to a Variable which was later used in the loop
+
+3. Simplified the pizza size selector by using a case statement which assigned a value of 25, 33.3 and 50 
+	- the above values were mapped to newWidth and passed as a percentage
 
 
