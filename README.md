@@ -103,5 +103,17 @@ With 200 configured... above + below
 
 3. Simplified the pizza size selector by using a case statement which assigned a value of 25, 33.3 and 50 
 	- the above values were mapped to newWidth and passed as a percentage
+	
+============ OPTIMIZATION STEPS for index.html
+I am confused why this was flagged as critical. The instructions for the project specifically stated to document the changes for the main.js in the readme file, however, the reviewed flagged the changes to index.html as a required in the readme. Submitting the them below.
+
+Optimzations Steps taken in Index.html
+- Resized pizzaria.jpg (reduced >90%)
+- Optimized pizzaria.jpg
+- Added media type to print.css to remove it from critical path while displaying the page in abrowser
+- Optimized the remaining images on the page
+- Wed Front Loader to load Google Fonts instead of a link to CSS.
+- Remove the server call for style.css by defining the style in the <head>
+- Ending Page Test results for Mobile and Desktop were 95 and 97 respectively.
 
 
