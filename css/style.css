@@ -1,0 +1,31 @@
+/* Style CSS */
+
+body {
+	font-family: "Lato", sans-serif;
+	color: #747704;
+	font-weight: 300;
+}
+
+/* Often used Classes */
+
+.text-muted {
+	color: #bcbbbb;
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+/* More Specific Classes */
+
+.title-super {
+	font-size: 60px;
+}
+
+.title-logo {
+	margin-top: 20px;
+}
+
+.addpad-left {
+	margin-left: 20px;
+}
