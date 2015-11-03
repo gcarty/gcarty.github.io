@@ -4,11 +4,49 @@
     <meta charset="UTF-8">
     <title>Effective JavaScript: Frogger</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <script src="../js/jquery-1.11.3.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="menu-hidden" >
+    
+    <!-- ----------------- Start of Hidden Menu --------------------- -->
+
+    <div class="header">
+        <a href="#" class="menu-icon-link"> <i class="icon-list"></i> </a>
+    </div>
+
+    <div class="menu" onclick="toggleHidden()">
+        <ul class="feed-list">
+            <li><a href="http://gcarty.github.io" class="active"> Project 1</a></li>
+            <li><a href="http://gcarty.github.io/p2/"> Project 2</a></li>
+            <li><a href="http://gcarty.github.io/p3/"> Project 3</a></li>
+            <li><a href="http://gcarty.github.io/p4/"> Project 4</a></li>
+            <li><a href="http://gcarty.github.io/p5/"> Project 5</a></li>
+            <li><a href="http://gcarty.github.io/p5/"> Project 6</a></li>
+        </ul>
+        <hr>
+        <a href="#" class="menu-icon-link"> <i class="icon-list"></i> </a>
+    </div>
+
+    <!-- ------------------- end hidden menu ------------------------- -->
+
+    <div class="Main" onclick="toggleHidden()">
+
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
+</div>
+    <script>
+        menuIcon = $('.menu-icon-link');
+        menuIcon.on('click', function() {
+            $('body').toggleClass('menu-hidden');
+        });
+
+        function toggleHidden() {
+            $('body').addClass('menu-hidden');
+            return false;
+        }
+    </script>
 </body>
 </html>
