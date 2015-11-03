@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neighborhood Map</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        #map { height: 550px; }
+        </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="md-col-12" id="search">
+                <input type="text" placeholder="Search Filter" data-bind="value: filterKeyword, valueUpdate: 'keyup'">
+            </div>
+        </div>
+        <div class="row">
+                        <div class="col-md-2" id="left-col">
+                <h3 class="text-uppercase" id="nav">Cool Places</h3>
+                <ul data-bind="foreach: filterFunction()" >
+                <li data-bind="text: name, click: $parent.selectMarker"></li>
+                </ul>
+            </div>
+            <!-- Display the Map and location  -->
+            <div class="col-md-10" id="map">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Load the Google API -->
+    <!--Load other Scripts -->
+
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/libs/knockout-3.3.0.js"></script>
+    <script src="js/mapapp.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places?key=AIzaSyCTcEivvVtA_1o6r4uo-yecUNSm6ruZm1s&callback=allgood" async defer></script>
+</body>
+
+</html>

@@ -25,6 +25,10 @@ body {
 	font-weight: 100;
 }
 
+.src-txt {
+    color: #000000;
+}
+
 /* More Specific Classes */
 
 .title-super {
