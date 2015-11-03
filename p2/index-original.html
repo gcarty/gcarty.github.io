@@ -22,12 +22,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <title>Resume</title>
 
   <!-- Load the page styles. -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/icomoon.css">
-    <link href="../css/style.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/jquery-1.11.3.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 
   <!--
   jQuery is a common JavaScript library for reading and making changes to the
@@ -55,29 +50,8 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
   <meta name="viewport" content="width=device-width">
 </head>
-<body unresolved class="menu-hidden">
-
-    <!-- ----------------- Start of Hidden Menu --------------------- -->
-
-    <div class="header">
-        <a href="#" class="menu-icon-link"> <i class="icon-list"></i> </a>
-    </div>
-
-    <div class="menu" onclick="toggleHidden()">
-        <ul class="feed-list">
-            <li><a href="http://gcarty.github.io" class="active"> Project 1</a></li>
-            <li><a href="http://gcarty.github.io/p2/"> Project 2</a></li>
-            <li><a href="http://gcarty.github.io/p3/"> Project 3</a></li>
-            <li><a href="http://gcarty.github.io/p4/"> Project 4</a></li>
-            <li><a href="http://gcarty.github.io/p5/"> Project 5</a></li>
-            <li><a href="http://gcarty.github.io/p5/"> Project 6</a></li>
-        </ul>
-    </div>
-    <hr>
-
-    <!-- ------------------- end hidden menu ------------------------- -->
-
-  <div id="main" onclick="toggleHidden()">
+<body unresolved>
+  <div id="main">
 
     <!--
     Everything from here to the <script> tag below is the skeleton of your
@@ -161,17 +135,5 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       document.getElementById('mapDiv').style.display = 'none';
     }
   </script>
-<script>
-        menuIcon = $('.menu-icon-link');
-        menuIcon.on('click', function() {
-            $('body').toggleClass('menu-hidden');
-        });
-
-        function toggleHidden() {
-            $('body').addClass('menu-hidden');
-            return false;
-        }
-    </script>
-
 </body>
 </html>
