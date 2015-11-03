@@ -1,100 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio of Glen Carty</title>
-  <link href="http://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <script src="js/jquery-1.11.3.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio of Glen Carty</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 </head>
-<body>
-    <!-- Define Master Container for Site  -->
-  <div class="container">
-    <!-- Logo and Header Info -->
-    <div class="row">
-      <header>
-        <div class="col-md-6">
-          <img class="img-responsive title-logo img-circle" src="images/logo.jpg" alt="logo">
+
+<body class="menu-hidden">
+
+    <!-- ----------------- Start of Hidden Menu --------------------- -->
+
+    <div class="header">
+        <a href="#" class="menu-icon-link"> <i class="icon-list"></i> </a>
+    </div>
+
+    <div class="menu" onclick="toggleHidden()">
+        <ul class="feed-list">
+            <li><a href="http://gcarty.github.io" class="active"> Project 1</a></li>
+            <li><a href="http://gcarty.github.io/p2/"> Project 2</a></li>
+            <li><a href="http://gcarty.github.io/p3/"> Project 3</a></li>
+            <li><a href="http://gcarty.github.io/p4/"> Project 4</a></li>
+            <li><a href="http://gcarty.github.io/p5/"> Project 5</a></li>
+            <li><a href="http://gcarty.github.io/p5/"> Project 6</a></li>
+        </ul>
+    </div>
+    <hr>
+
+    <!-- ------------------- end hidden menu ------------------------- -->
+
+    <div class="container" onclick="toggleHidden()">
+        <div class="row">
+            <header>
+                <div class="col-md-6">
+                    <img class="img-responsive title-logo img-circle" src="images/logo.jpg" alt="logo">
+                </div>
+                <div class="col-md-6 text-right text-uppercase">
+                    <h1 class="title-super text-thin">Glen Carty</h1>
+                    <h4>Web Junkie</h4>
+                </div>
+            </header>
         </div>
-        <div class="col-md-6 text-right text-uppercase">
-          <h1 class="title-super text-thin">Glen Carty</h1>
-          <h4>Web Junkie</h4>
+        <div class="row">
+            <div class="col-md-12">
+              <!-- Draw a line separator to separate main below info from logo above -->
+              <hr>
+            </div>
         </div>
-    </header>
-    </div>
-    <!-- Draw a line separator to separate main below info from logo above -->
-    <div class="row">
-      <div class="col-md-12">
-        <hr>
-      </div>
-    </div>
-    <!-- Begin Main Content -->
-    <div class="row">
-      <div class="col-md-12">
-        <img class="img-responsive" src="images/main-image-peru.jpg" alt="MainPicture">
-      </div>
-    </div>
-    <!-- Featured Work containing 3 Portfolios -->
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="text-muted addpad-left">Featured Work</h2>
-      </div>
-    </div>
-    <div class="row">
-      <article>
-        <div class="col-md-4 text-center">
-          <img class="img-responsive img-thumbnail" src="images/pf1-image-japan.jpg" alt="Portfolio 1" data-toggle="modal" data-target="#pf1-descr">
-          <h3 class="text-uppercase"><a href="https://www.udacity.com/">Kyoto, Japan</a></h3>Beautiful Gardens
+        
+        <!-- Begin Main Content -->
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-responsive" src="images/main-image-peru.jpg" alt="MainPicture">
+            </div>
         </div>
-      </article>
-      <article>
-        <div class="col-md-4 text-center">
-          <img class="img-responsive img-thumbnail" src="images/pf2-image-brazil.jpg" alt="Portfolio 2">
-          <h3 class="text-uppercase"><a href="https://www.udacity.com/">Moro Branco, Brazil</a></h3>Colorful Sandstones
+        
+        <!-- Featured Work containing 3 Portfolios -->
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-muted addpad-left">Featured Work</h2>
+            </div>
         </div>
-      </article>
-      <article>
-        <div class="col-md-4 text-center">
-          <img class="img-responsive img-thumbnail" src="images/pf3-image-amsterdam.jpg" alt="Portfolio 3">
-          <h3 class="text-uppercase"><a href="https://www.udacity.com/">Keukenhof, Amsterdam</a></h3>Tulip Gardens
+        
+        <div class="row">
+            <article>
+                <div class="col-md-4 text-center">
+                    <img class="img-responsive img-thumbnail" src="images/pf1-image-japan.jpg" alt="Portfolio 1" data-toggle="modal" data-target="#pf1-descr">
+                    <h3 class="text-uppercase"><a href="https://www.udacity.com/">Appify</a></h3>https://github.com/udacity/Appify/
+                </div>
+            </article>
+            <article>
+                <div class="col-md-4 text-center">
+                    <img class="img-responsive img-thumbnail" src="images/pf2-image-brazil.jpg" alt="Portfolio 2">
+                    <h3 class="text-uppercase"><a href="https://www.udacity.com/">Sunflower</a></h3>https://github.com/udacity/Sunflower/
+                </div>
+            </article>
+            <article>
+                <div class="col-md-4 text-center">
+                    <img class="img-responsive img-thumbnail" src="images/pf3-image-amsterdam.jpg" alt="Portfolio 3">
+                    <h3 class="text-uppercase"><a href="https://www.udacity.com/">BokeH</a></h3>https://github.com/udacity/BokeH/
+                </div>
+            </article>
         </div>
-      </article>
     </div>
-    </div>
+    
     <!-- End of Main content and Modal Begins below  -->
-  <div class="modal fade" id="pf1-descr" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">My First Project as a Web Junkie</h4>
-      </div>
-      <div class="modal-body text-center">
-        <img class="img-responsive" src="images/pf1-modal-img-alaska.jpg" alt="pf1-modal-img">
-        This was my first project in this class. 
-        <p>The coursework built on the fundamentals of HTML and CSS and introduced some useful tools and websites.</p>
-          <p>The following are some useful notes that will be of value in later projects.</p>
-        <h5 class="text-thin">HTML Syntax Checking</h5>
-        https://validator.w3.org/
-        <h5 class="text-thin">CSS Syntax Checking</h5>
-        http://jigsaw.w3.org/css-validator/
-        <h5 class="text-thin">HTML, CSS, and JS framework</h5>
-        http://getbootstrap.com/ - a wealth of frontend components and documentation
-        <h5 class="text-thin">Fonts</h5>
-        http://google.com/fonts - hundreds of font families with code for embedding in projects
-        <h5 class="text-thin">Normalize CSS</h5>
-        link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" / -- Note: Validation checker does not like the 'src' statement
-        <h5 class="text-thin">Placeholder Stock Images</h5>
-        Variable images - supply the size fro display http://placehold.it eg. placehold.it/300x100
-        <h5 class="text-thin">Google Web Developer Tools</h5>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
+    <div class="modal fade" id="pf1-descr" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">My First Project as a Web Junkie</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <img class="img-responsive" src="images/pf1-modal-img-alaska.jpg" alt="pf1-modal-img"> This was my first project in this class.
+                    <p>The coursework built on the fundamentals of HTML and CSS and introduced some useful tools and websites.</p>
+                    <p>The following are some useful notes that will be of value in later projects.</p>
+                    <h5 class="text-thin">HTML Syntax Checking</h5> https://validator.w3.org/
+                    <h5 class="text-thin">CSS Syntax Checking</h5> http://jigsaw.w3.org/css-validator/
+                    <h5 class="text-thin">HTML, CSS, and JS framework</h5> http://getbootstrap.com/ - a wealth of frontend components and documentation
+                    <h5 class="text-thin">Fonts</h5> http://google.com/fonts - hundreds of font families with code for embedding in projects
+                    <h5 class="text-thin">Normalize CSS</h5> link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" / -- Note: Validation checker does not like the 'src' statement
+                    <h5 class="text-thin">Placeholder Stock Images</h5> Variable images - supply the size fro display http://placehold.it eg. placehold.it/300x100
+                    <h5 class="text-thin">Google Web Developer Tools</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+    <script>
+        menuIcon = $('.menu-icon-link');
+        menuIcon.on('click', function() {
+            $('body').toggleClass('menu-hidden');
+        });
+
+        function toggleHidden() {
+            $('body').addClass('menu-hidden');
+            return false;
+        }
+    </script>
 </body>
+
 </html>
